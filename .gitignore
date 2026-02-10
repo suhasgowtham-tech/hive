@@ -1,24 +1,34 @@
+# ================================
 # Dependencies
+# ================================
 node_modules/
 .pnpm-store/
 
+# ================================
 # Build outputs
+# ================================
 dist/
 build/
 workdir/
 .next/
 out/
 
+# ================================
 # Environment files
+# ================================
 .env
 .env.local
 .env.*.local
 
-# User configuration (copied from .example)
+# ================================
+# User configuration
+# ================================
 config.yaml
 docker-compose.override.yml
 
-# IDE
+# ================================
+# IDE / Editors
+# ================================
 .idea/
 .vscode/*
 !.vscode/extensions.json
@@ -27,11 +37,15 @@ docker-compose.override.yml
 *.swo
 *~
 
-# OS
+# ================================
+# OS files
+# ================================
 .DS_Store
 Thumbs.db
 
+# ================================
 # Logs
+# ================================
 logs/
 *.log
 npm-debug.log*
@@ -39,38 +53,65 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Testing
+# ================================
+# Testing artifacts
+# ================================
 coverage/
 .nyc_output/
 .pytest_cache/
 
+# ================================
 # TypeScript
+# ================================
 *.tsbuildinfo
 
+# ================================
 # Python
+# ================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.egg-info/
 .eggs/
 *.egg
+.venv/
 
+# ================================
 # Generated runtime data
+# ================================
 core/data/
 
-# Misc
+# ================================
+# Temp / cache
+# ================================
 *.local
 .cache/
 tmp/
 temp/
 
+# ================================
+# Exports
+# ================================
 exports/*
 
+# ================================
+# Agent builder runtime
+# ================================
 .agent-builder-sessions/*
 
 .claude/settings.local.json
 
-.venv
-
+# ================================
+# Docs & tests artifacts
+# ================================
 docs/github-issues/*
 core/tests/*dumps/*
+
+# ================================
+# 🚨 Crash-safe runtime local state (NEW)
+# ================================
+.hive_state/
+.snapshots/
+.test_state/
+core/.snapshots/
+test_crash_safe.py
