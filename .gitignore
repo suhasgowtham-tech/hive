@@ -3,6 +3,7 @@
 # ================================
 node_modules/
 .pnpm-store/
+.venv/
 
 # ================================
 # Build outputs
@@ -74,7 +75,6 @@ __pycache__/
 *.egg-info/
 .eggs/
 *.egg
-.venv/
 
 # ================================
 # Generated runtime data
@@ -98,7 +98,6 @@ exports/*
 # Agent builder runtime
 # ================================
 .agent-builder-sessions/*
-
 .claude/settings.local.json
 
 # ================================
@@ -108,10 +107,9 @@ docs/github-issues/*
 core/tests/*dumps/*
 
 # ================================
-# 🚨 Crash-safe runtime local state (NEW)
+# Runtime Persistence State
 # ================================
 .hive_state/
 .snapshots/
 .test_state/
 core/.snapshots/
-test_crash_safe.py
